@@ -1,6 +1,4 @@
-const pixels = [];
-
-pixels = Array.from(this.shadowRoot.querySelectorAll('rect'));
+const pixels = Array.from(document.querySelectorAll('rect'));
 
 // Workaround for a Wokwi sometimes missing the first message
 let listener = setInterval(() => {
