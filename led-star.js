@@ -15,6 +15,7 @@ window.addEventListener('message', ({ data }) => {
         const g = (value >> 16) & 0xff;
         if (pixels[i]) {
           pixels[i].setAttribute('fill', `rgb(${r}, ${g}, ${b})`);
+            ctx.fillText("Fill text", 20, 50);
         }
       }
       if (listener != null) {
